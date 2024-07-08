@@ -91,19 +91,22 @@ const EmblaCarousel = (props) => {
       url: 'https://lindyslocalpest.com/',
       snapshoturl: '/lindys.png',
       alt: 'lindys local pest control freelance',
-      title: `Lindy's Local Pest Control Marketing Web Site`
+      title: `Lindy's Local Site`,
+      description: 'Sole developer for company, used Create React App, LESS CSS, and React Router to code the site. Deployed from Github with Vercel.'
     },
     {
-      url: '/',
-      snapshoturl: '/under-construction.jpg',
-      alt: 'Project 2 Coming Soon!',
-      title: `Project 2 Coming Soon!`
+      url: 'https://boxcc-qiaaa-aaaan-qc7aq-cai.icp0.io/',
+      snapshoturl: '/obsidian_tears.png',
+      alt: 'obsidian tears videogame on blockchain',
+      title: `OT Video Game Site`,
+      description: 'Refactored front end by implementing TailwindCSS and refactoring / improving past styles and new components.'
     },
     {
       url: '/',
       snapshoturl: '/under-construction.jpg',
       alt: 'Project 3 Coming Soon!',
-      title: `Project 3 Coming Soon!`
+      title: `Project 3 Coming Soon!`,
+      description: 'Coming soon!'
     }
   ]
 
@@ -113,9 +116,9 @@ const EmblaCarousel = (props) => {
         <div className="embla__container ml-0">
           {slides.map((index) => (
             <div className="embla__slide" key={index}>
-              <p>{projects[index].title}</p>
+              <p className='my-2 font-bold'>{projects[index].title}</p>
               <div className="embla__parallax">
-                <div className="embla__parallax__layer">
+                <div className="embla__parallax__layer flex flex-col h-carousel-card">
                 <Link isExternal href={`${projects[index].url}`}>
                   <Image
                     as={NextImage}
@@ -126,23 +129,18 @@ const EmblaCarousel = (props) => {
                     alt={`${projects[index].alt}`}
                     className="border embla__slide__img embla__parallax__img"
                   />
-                  {/* <img
-                    className="embla__slide__img embla__parallax__img"
-                    src={`${projects[index].snapshoturl}`}
-                    alt={`${projects[index].alt}`}
-                  /> */}
                 </Link>
+                <p className='mb-auto'>{projects[index].description}</p>
                 </div>
               </div>
             </div>
           ))}
         </div>
-      </div>
-
-      <div className="embla__controls">
-        <div className="embla__buttons">
-          <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
-          <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
+        <div className="embla__controls">
+          <div className="embla__buttons">
+            <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
+            <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
+          </div>
         </div>
       </div>
     </div>

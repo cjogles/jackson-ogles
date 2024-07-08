@@ -13,6 +13,9 @@ module.exports = {
         sans: ["var(--font-sans)"],
         mono: ["var(--font-geist-mono)"],
       },
+      height: {
+        'carousel-card': '460px',
+      },
     },
   },
   darkMode: "class",

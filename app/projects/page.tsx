@@ -9,8 +9,8 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
 export default function ProjectsPage() {
   return (
-    <div>
-      <h1 className={title()}>Projects</h1>
+    <div className="">
+      <h1 className={title({ class: ""})}>Projects</h1>
       <div className="mt-5">
         <EmblaCarousel slides={SLIDES} />
       </div>
