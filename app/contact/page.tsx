@@ -4,6 +4,7 @@ import { Input, Textarea } from "@nextui-org/input";
 import { Button } from "@nextui-org/button";
 import { useForm, Controller } from "react-hook-form";
 import emailjs from '@emailjs/browser';
+import { useRouter } from 'next/navigation'  // Usage: App router
 
 interface IFormInput {
   firstName: string;
@@ -12,7 +13,8 @@ interface IFormInput {
 }
 
 export default function ContactPage() {
-  const { control, handleSubmit, formState: { errors }, reset } = useForm<IFormInput>({
+  const router = useRouter();
+  const { control, handleSubmit, formState: { errors } } = useForm<IFormInput>({
     defaultValues: {
       firstName: "",
       firstEmail: "",
@@ -33,7 +35,8 @@ export default function ContactPage() {
       })
       .then(() => {
         console.log("email sent successfully");
-        reset();
+        window.alert("Thanks for reaching out! I'll respond within the next 3 business days.")
+        router.push('/')
       })
       .catch((error) => {
         console.error("error:", error);
@@ -42,7 +45,10 @@ export default function ContactPage() {
 
   return (
     <div className="flex w-full flex-col md:flex-row">
-      <h1 className={title({ class: "md:w-5/12"})}>Let's build together.</h1>
+      <div className="flex flex-col">
+        <h1 className={title({ class: ""})}>Let's build together.</h1>
+        <h2 className="text-sky-800 text-lg my-8"><a href="/resume.pdf" download="jackson_ogles_resume">Download my resume here!</a></h2>
+      </div>
       <div className="flex flex-col mt-12 md:mt-0 md:w-7/12">
         <div className="md:mx-20 text-left">
         <form onSubmit={handleSubmit(onSubmit)}>
