@@ -17,7 +17,7 @@ export default function AboutPage() {
   return (
     <>
       <h1 className={title()}>About</h1>
-      <h2 className="mt-8">You can always find me coding! It's so fun to build using modern web technologies. <br/> You can find me at my local coffee shop, at home or on the go! <br/> My wife likes to give me coding buddies occassionaly as well (see kids and pets lol) <br/> <p className="text-sky-800 text-lg"><a href="/resume.pdf" download="jackson_ogles_resume">Download my resume here!</a></p></h2>
+      <h2 className="mt-8">You can always find me coding! It's so fun to build using modern web technologies. <br/> You can find me at my local coffee shop, at home or on the go! <br/> My wife likes to give me coding buddies occassionaly as well (see kids and pets lol) <br/> <p className="text-sky-800 text-lg"><a href="/resume.pdf" download="jackson_ogles_resume">Download my resume 📝</a></p></h2>
       <div className="max-w-full">
         <div className="p-6 mx-auto">
           <div className="md:grid md:gap-6 md:grid-cols-2 lg:grid-cols-3 mb-12">
