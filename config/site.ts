@@ -2,7 +2,7 @@ export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
   name: "Jackson Ogles Portfolio Website",
-  description: "React, Next.js, NextUI",
+  description: "This is Jackson's web development website to showcase his resume, projects, experience, and skills. Built using React and Next.js. Includes a continuously updated blog.",
   navItems: [
     {
       label: "Home",
@@ -19,6 +19,10 @@ export const siteConfig = {
     {
       label: "Contact",
       href: "/contact",
+    },
+    {
+      label: "Blog",
+      href: "/blog",
     },
   ],
   navMenuItems: [
@@ -37,6 +41,10 @@ export const siteConfig = {
     {
       label: "Contact",
       href: "/contact",
+    },
+    {
+      label: "Blog",
+      href: "/blog",
     }
   ],
   links: {

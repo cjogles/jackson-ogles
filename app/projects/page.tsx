@@ -1,6 +1,6 @@
 "use client"
-import { title } from "@/components/primitives";
-import EmblaCarousel from '@/components/EmblaCarousel';
+import { title } from "../_components/primitives";
+import EmblaCarousel from '../_components/EmblaCarousel';
 import '../../styles/base.css'
 import '../../styles/embla.css'
 

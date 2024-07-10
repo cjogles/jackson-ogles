@@ -1,5 +1,5 @@
 import { Link } from "@nextui-org/link";
-import { title, subtitle } from "@/components/primitives";
+import { title, subtitle } from "./_components/primitives";
 
 export default function NotFound() {
   return (

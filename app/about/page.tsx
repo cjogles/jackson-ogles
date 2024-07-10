@@ -1,18 +1,18 @@
-import { title } from "@/components/primitives";
+import { title } from "../_components/primitives";
 import Image from "next/image";
 import React from "react";
 
 export default function AboutPage() {
   const data = [
-    { image: "/c9.jpeg"},
-    { image: "/c8.jpg"},
-    { image: "/c7.jpeg"},
-    { image: "/c6.jpeg"},
-    { image: "/c5.jpeg"},
-    { image: "/c4.jpeg"},
-    { image: "/c3.jpeg"},
-    { image: "/c2.jpeg"},
-    { image: "/c1.jpeg"},
+    { image: "/assets/collage/c9.jpeg"},
+    { image: "/assets/collage/c8.jpg"},
+    { image: "/assets/collage/c7.jpeg"},
+    { image: "/assets/collage/c6.jpeg"},
+    { image: "/assets/collage/c5.jpeg"},
+    { image: "/assets/collage/c4.jpeg"},
+    { image: "/assets/collage/c3.jpeg"},
+    { image: "/assets/collage/c2.jpeg"},
+    { image: "/assets/collage/c1.jpeg"},
   ];
   return (
     <>

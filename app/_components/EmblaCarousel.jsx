@@ -89,21 +89,21 @@ const EmblaCarousel = (props) => {
   const projects = [
     {
       url: 'https://lindyslocalpest.com/',
-      snapshoturl: '/lindys.png',
+      snapshoturl: '/assets/projects/lindys.png',
       alt: 'lindys local pest control freelance',
       title: `Lindy's Local Site`,
       description: 'Sole developer for company, used Create React App, LESS CSS, and React Router to code the site. Deployed from Github with Vercel.'
     },
     {
       url: 'https://boxcc-qiaaa-aaaan-qc7aq-cai.icp0.io/',
-      snapshoturl: '/obsidian_tears.png',
+      snapshoturl: '/assets/projects/obsidian_tears.png',
       alt: 'obsidian tears videogame on blockchain',
       title: `OT Video Game Site`,
       description: 'Refactored front end by implementing TailwindCSS and refactoring / improving past styles and new components.'
     },
     {
       url: '/',
-      snapshoturl: '/under-construction.jpg',
+      snapshoturl: '/assets/projects/under-construction.jpg',
       alt: 'Project 3 Coming Soon!',
       title: `Project 3 Coming Soon!`,
       description: 'Coming soon!'

@@ -1,5 +1,5 @@
 "use client"
-import { title } from "@/components/primitives";
+import { title } from "../_components/primitives";
 import { Input, Textarea } from "@nextui-org/input";
 import { Button } from "@nextui-org/button";
 import { useForm, Controller } from "react-hook-form";
