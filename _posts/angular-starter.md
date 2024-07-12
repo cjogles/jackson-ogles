@@ -1,13 +1,13 @@
 ---
 title: "Angular - Homes"
 excerpt: "I wanted to get my feet wet with Angular development, since I have an interview on Monday where Angular is their javascript framework of choice. I learned the angular way on how to create components, create interfaces, add inputs to components, add property binding to components, add dynamic values to templates, use *ngFor to loop through data in templates, use Angular services, add routing, integrate Angular forms, add search functionality, and how to add HTTP communication."
-coverImage: "/assets/blog/main_covers/angular-starter.png"
+coverImage: "/assets/blog-assets/main_covers/angular-starter.png"
 date: "2024-07-12T05:35:07.322Z"
 author:
   name: "Jackson Ogles"
   picture: "/me.jpeg"
 ogImage:
-  url: "/assets/blog/main_covers/angular-starter.png"
+  url: "/assets/blog-assets/main_covers/angular-starter.png"
 deploy: "https://angular-homes-six.vercel.app/"
 github: "https://github.com/cjogles/angular-homes"
 ---

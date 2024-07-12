@@ -1,13 +1,13 @@
 ---
 title: "Site Audit for StatsTest.com"
 excerpt: "I've been asked to perform a site audit for a wordpress site that gets around 10k users per month. Especially in regards to SEO (search engine optimization). The company in question would like me to investigate page loading time, cache setup, fixing 404s, Google Search / organic search performace, metadata tagging to assist sharing site on social websites, google indexing performance and functionality, sitemap and much much more. This blog post will explore some of these topics!"
-coverImage: "/assets/blog/seo/seo.jpg"
+coverImage: "/assets/blog-assets/seo/seo.jpg"
 date: "2024-07-10T05:35:07.322Z"
 author:
   name: "Jackson Ogles"
   picture: "/me.jpeg"
 ogImage:
-  url: "/assets/blog/seo/seo.jpg"
+  url: "/assets/blog-assets/seo/seo.jpg"
 ---
 
 Under Construction :)
