@@ -22,6 +22,8 @@ export default function Index() {
           author={heroPost.author}
           slug={heroPost.slug}
           excerpt={heroPost.excerpt}
+          github={heroPost.github}
+          deploy={heroPost.deploy}
         />
         {morePosts.length > 0 && <MoreStories posts={morePosts} />}
       </Container>

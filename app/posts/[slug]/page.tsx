@@ -30,7 +30,7 @@ export default async function Post({ params }: Params) {
             date={post.date}
             author={post.author}
           />
-          <PostBody content={content} />
+          <PostBody content={content} github={post?.github} deploy={post?.deploy} />
         </article>
       </Container>
     </main>

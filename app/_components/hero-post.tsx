@@ -11,6 +11,8 @@ type Props = {
   excerpt: string;
   author: Author;
   slug: string;
+  deploy: string;
+  github: string;
 };
 
 export function HeroPost({
@@ -20,6 +22,8 @@ export function HeroPost({
   excerpt,
   author,
   slug,
+  deploy,
+  github
 }: Props) {
   return (
     <section>
@@ -36,6 +40,16 @@ export function HeroPost({
           <div className="mb-4 md:mb-0 text-lg">
             <DateFormatter dateString={date} />
           </div>
+          {github && <p className="my-4 text-lg leading-tight">
+            <Link href={`${github}`} className="hover:underline" target="_blank">
+              ⭐ See Github Code
+            </Link>
+          </p>}
+          {deploy && <p className="my-4 text-lg leading-tight">
+            <Link href={`${deploy}`} className="hover:underline" target="_blank">
+              ⭐ See deployment of project on Vercel
+            </Link>
+          </p>}
         </div>
         <div>
           <p className="text-lg leading-relaxed mb-4">{excerpt}</p>

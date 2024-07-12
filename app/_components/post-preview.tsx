@@ -11,6 +11,8 @@ type Props = {
   excerpt: string;
   author: Author;
   slug: string;
+  deploy: string;
+  github: string;
 };
 
 export function PostPreview({
@@ -20,6 +22,8 @@ export function PostPreview({
   excerpt,
   author,
   slug,
+  deploy,
+  github,
 }: Props) {
   return (
     <div>
@@ -31,6 +35,16 @@ export function PostPreview({
           {title}
         </Link>
       </h3>
+      {github && <p className="my-4 text-lg leading-tight">
+        <Link href={`${github}`} className="hover:underline" target="_blank">
+          ⭐ See Github Code
+        </Link>
+      </p>}
+      {deploy && <p className="my-4 text-lg leading-tight">
+        <Link href={`${deploy}`} className="hover:underline" target="_blank">
+          ⭐ See deployment of project on Vercel
+        </Link>
+      </p>}
       <div className="text-lg mb-4">
         <DateFormatter dateString={date} />
       </div>

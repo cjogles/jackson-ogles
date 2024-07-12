@@ -21,6 +21,8 @@ export function MoreStories({ posts }: Props) {
             author={post.author}
             slug={post.slug}
             excerpt={post.excerpt}
+            github={post.github}
+            deploy={post.deploy}
           />
         ))}
       </div>
