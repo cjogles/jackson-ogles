@@ -10,12 +10,60 @@ ogImage:
   url: "/assets/blog-assets/seo/seo.jpg"
 ---
 
-Under Construction :)
+Performing an SEO audit for a WordPress site involves a comprehensive review of various elements that impact search engine rankings. Here’s some general reporting for what I’ve found so far, and what we can do further in the future. I 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
+## Site Speed, Accessibility, Performance, SEO:
 
-Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidunt. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Volutpat consequat mauris nunc congue nisi vitae. Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.
+https://pagespeed.web.dev/analysis/https-www-statstest-com/a3gdw3nu0x?form_factor=mobile
 
-## Lorem Ipsum
+Some possible improvements in regards to this section include: 
 
-Tristique senectus et netus et malesuada fames ac turpis. Ridiculous mus mauris vitae ultricies leo integer malesuada nunc vel. In mollis nunc sed id semper. Egestas tellus rutrum tellus pellentesque. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Eros donec ac odio tempor orci dapibus ultrices. Aliquam sem et tortor consequat id porta nibh. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Diam vulputate ut pharetra sit amet. Ut tellus elementum sagittis vitae et leo. Arcu non odio euismod lacinia at quis risus sed vulputate.
+- Add a meta description. You have a social meta description, but wouldn’t hurt to add both. For example, add the following:
+`<meta property="description" content="same as og:description content here…">`
+- Fix un-crawable links such as: <a aria-expanded="false" class="menu-link">, there is no href
+- Consider updating background color contrast ratio for buttons and text. Accessibility flags it as not good enough. Not super crucial to already good accessibility score though.
+- Properly size images to save on cellular/load times. Upload images directly through the media library to ensure that the required image sizes are available, and then insert them from the media library or use the image widget to ensure the optimal image sizes are used (including those for the responsive breakpoints). Avoid using Full Size images unless the dimensions are adequate for their usage
+- Reduce JS execution time, reduce main thread work, limit redundant third party code, try to load third party code after page loads. 
+- Largest contentful pain element has a very long render delay. Try to remove render blocking code to load after page loads and renders to help this element load faster. There are a number of WordPress plugins that can help you inline critical assets or defer less important resources. Beware that optimizations provided by these plugins may break features of your theme or plugins, so you will likely need to make code changes. Learn how to eliminate render-blocking resources.
+- Consider using the Performance Lab plugin to automatically convert your uploaded JPEG images into WebP, wherever supported, as this next gen image format means faster downloads and less data consumption.
+- Consider reducing, or switching, the number of WordPress plugins loading unused CSS in your page. To identify plugins that are adding extraneous CSS, try running code coverage in Chrome DevTools. You can identify the theme/plugin responsible from the URL of the stylesheet. Look out for plugins that have many stylesheets in the list which have a lot of red in code coverage. A plugin should only enqueue a stylesheet if it is actually used on the page. You can also identify the theme/plugin responsible from the URL of any scripts. Look out for plugins that have many scripts in the list which have a lot of red in code coverage. A plugin should only enqueue a script if it is actually used on the page.
+- The recaptcha script seems like a likely duplicate long thread work taking resource for some reason. It’s worthy of investigation and improvement, if at all possible.
+- Leverage the font-display CSS feature to ensure text is user-visible while webfonts are loading. Learn more about font-display.
+
+## Broken Link Checker
+
+- Use search console or a broken link checker or crawler to assess broken links, then target them and fix them from there.
+
+## Googles Mobile Friendly Test
+
+- I will need to go into search console to try this out. Can also analyze bounce rate, time on site, 404’s, pages per session, and other metrics on google search console.
+
+## On-Page SEO
+
+- Title Tags and Meta Descriptions: Check for unique and optimized title tags and meta descriptions for each page.
+- Headings (H1, H2, etc.): Ensure proper use of heading tags to structure content.
+- Content Quality: Review content for relevance, keyword usage, and readability. Use tools like Grammarly and Hemingway for content improvement.
+- Keyword Optimization: Analyze keyword placement in titles, headers, and body text.
+- Image Optimization: Ensure images have alt text, are compressed for faster loading, and use descriptive filenames.
+- Internal Linking: Check for a good structure of internal links to distribute link equity and help with navigation.
+
+## User Experience (UX) Audit
+
+- Navigation: Ensure your site is easy to navigate with a clear structure.
+- Design and Layout: Make sure your site is visually appealing and easy to use.
+- Engagement Metrics: Use Google Analytics to analyze bounce rate, time on site, and pages per session.
+
+## Content Audit
+
+- Content Inventory: Create a list of all your content and assess its performance.
+- Update and Improve: Refresh outdated content, improve poorly performing pages, and remove duplicate content.
+- Content Gap Analysis: Identify missing topics or keywords you should target.
+
+## Backlink Profile:
+
+- Check with free tool with Ahrefs:
+- See https://help.ahrefs.com/en/articles/1409408-what-is-domain-rating-dr to assess what backlink domain rate is and how it's calculated.
+
+
+
+
