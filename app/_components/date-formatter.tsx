@@ -8,6 +8,7 @@ const DateFormatter = ({ dateString }: Props) => {
   let date;
   if (dateString?.length !== 0) {
     date = parseISO(dateString || "");
+    return <></>
   } else {
     date = ""
     return <><time dateTime={dateString || ""}>{format(date || "", "LLLL	d, yyyy")}</time></>;
