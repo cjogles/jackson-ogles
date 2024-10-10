@@ -7,7 +7,7 @@ import DateFormatter from "./date-formatter";
 type Props = {
   title: string;
   coverImage: string;
-  date: string;
+  date: string | null;
   excerpt: string;
   author: Author;
   slug: string;
@@ -46,7 +46,7 @@ export function PostPreview({
         </Link>
       </p>}
       <div className="text-lg mb-4">
-        <DateFormatter dateString={date} />
+        <DateFormatter dateString={date || null} />
       </div>
       <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
       <Avatar name={author.name} picture={author.picture} />

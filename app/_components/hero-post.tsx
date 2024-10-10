@@ -7,7 +7,7 @@ import DateFormatter from "./date-formatter";
 type Props = {
   title: string;
   coverImage: string;
-  date: string;
+  date: string | null;
   excerpt: string;
   author: Author;
   slug: string;
@@ -38,7 +38,7 @@ export function HeroPost({
             </Link>
           </h3>
           <div className="mb-4 md:mb-0 text-lg">
-            <DateFormatter dateString={date} />
+            <DateFormatter dateString={date || null} />
           </div>
           {github && <p className="my-4 text-lg leading-tight">
             <Link href={`${github}`} className="hover:underline" target="_blank">
