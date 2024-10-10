@@ -15,12 +15,12 @@ export default function Home() {
     <section className="">
       <div className="flex md:py-10 items-center flex-col md:flex-row align-middle">
         <div className="inline-block w-9/12 justify-center md:pl-3">
-          <h1 className={title()}>Hello! I'm&nbsp;</h1>
+          <h1 className={title()}>Hello! I&apos;m&nbsp;</h1>
           <h1 className={title({ color: "blue" })}>Jackson.&nbsp;</h1>
           <span className="animate-pulse hidden md:inline-block"><h1 className={title()}>👋</h1></span>
           <br />
           <h2 className={subtitle({ class: "mt-4" })}>
-            A versatile full stack web developer with a passion for creating immersive UI, intuitive UX, and efficient API's 🙌. Let's build together!
+            A versatile full stack web developer with a passion for creating immersive UI, intuitive UX, and efficient API&apos;s 🙌. Let&apos;s build together!
           </h2>
           <h3 className="text-sky-800 text-lg"><a href="/resume.pdf" download="jackson_ogles_resume">Download my resume 📝</a></h3>
         </div>

@@ -12,7 +12,7 @@ export default function NotFound() {
         <br />
         <br />
         <h2 className={subtitle({ class: "mt-4" })}>
-          Jackson's Portfolio has more to show you 🙌
+          Jackson&apos;s Portfolio has more to show you 🙌
         </h2>
       </div>
     </section>
