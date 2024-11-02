@@ -28,7 +28,7 @@ export default function AboutPage() {
         <br/>
         I am humbled by the vast amount of knowledge that exists in this field.
         <br/>
-        And I can't wait to see what I learn next!
+        And I can&apos;t wait to see what I learn next!
         <p className="text-sky-800 text-lg">
           <a href="/resume.pdf" download="jackson_ogles_resume">Download my resume 📝</a>
         </p>
