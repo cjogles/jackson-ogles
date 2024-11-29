@@ -3,13 +3,13 @@ title: "Node.js and Typescript: Module Resolution"
 excerpt: "The TypeScript compiler’s chief goal is to prevent certain kinds of runtime errors by catching them at compile time. 
 With or without modules involved, the compiler needs to know about the code’s intended runtime environment—what globals are available, for example.
 When modules are involved, the compiler needs know a few things in order to do its job. Let's discuss."
-coverImage: "/assets/blog-assets/main_covers/ts_module_cover.png"
+coverImage: "/assets/blog-assets/main_covers/node-ts-module.png"
 date: "2024-11-28T05:35:07.322Z"
 author:
   name: "Jackson Ogles"
   picture: "/me.jpeg"
 ogImage:
-  url: "/assets/blog-assets/main_covers/ts_module_cover.png"
+  url: "/assets/blog-assets/main_covers/node-ts-module.png"
 ---
 
 # How to configure Typescript (TS) module resolution for Node.js
