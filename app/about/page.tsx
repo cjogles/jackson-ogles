@@ -18,7 +18,7 @@ export default function AboutPage() {
     <div className="mt-16">
       <h1 className={title()}>About</h1>
       <h2 className="mt-8 text-center text-lg line-height-8 px-24">
-        I love building and understanding how things work. Software engineering fuels that passion, and web development lets me create meaningful, accessible solutions. I'm grateful to work on projects that help people alongside amazing colleagues. The depth of this field humbles me, and I'm excited for the future.
+        I love building and understanding how things work. Software engineering fuels that passion, and web development lets me create meaningful, accessible solutions. I&apos;m grateful to work on projects that help people alongside amazing colleagues. The depth of this field humbles me, and I&apos;m excited for the future.
         <br/>
         <p className="text-sky-800 text-lg">
           <a href="/resume.pdf" download="jackson_ogles_resume">Download my resume 📝</a>
