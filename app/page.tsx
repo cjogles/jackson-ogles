@@ -12,7 +12,7 @@ import NextImage from "next/image";
 
 export default function Home() {
   return (
-    <section className="">
+    <section className="mt-16">
       <div className="flex md:py-10 items-center flex-col md:flex-row align-middle">
         <div className="inline-block w-9/12 justify-center md:pl-3">
           <h1 className={title()}>Hello! I&apos;m&nbsp;</h1>

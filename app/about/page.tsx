@@ -15,20 +15,11 @@ export default function AboutPage() {
     { image: "/assets/collage/c1.jpeg"},
   ];
   return (
-    <>
+    <div className="mt-16">
       <h1 className={title()}>About</h1>
-      <h2 className="mt-8">
-        I enjoy building things and learning how they work.
+      <h2 className="mt-8 text-center text-lg line-height-8 px-24">
+        I love building and understanding how things work. Software engineering fuels that passion, and web development lets me create meaningful, accessible solutions. I'm grateful to work on projects that help people alongside amazing colleagues. The depth of this field humbles me, and I'm excited for the future.
         <br/>
-        Engineering software is one of the most potent ways to engage with that passion.
-        <br/>
-        I feel grateful to have the chance to work on projects that help people.
-        <br/>
-        And I feel lucky to have the chance to work with amazing people.
-        <br/>
-        I am humbled by the vast amount of knowledge that exists in this field.
-        <br/>
-        And I can&apos;t wait to see what I learn next!
         <p className="text-sky-800 text-lg">
           <a href="/resume.pdf" download="jackson_ogles_resume">Download my resume 📝</a>
         </p>
@@ -62,6 +53,6 @@ export default function AboutPage() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };

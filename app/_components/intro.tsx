@@ -16,7 +16,7 @@ export function Intro() {
         </a>{" "}
         and {CMS_NAME}.
       </h4> */}
-      <p className="text-center md:text-left text-lg mt-5 md:pl-8">My blog covers a diverse range of topics, including web development, software engineering, and other subjects that interest me.</p>
+      <p className="text-center md:text-left text-xl mt-5 md:pl-8">I write about web development, software engineering, and topics that inspire me.</p>
     </section>
   );
 }

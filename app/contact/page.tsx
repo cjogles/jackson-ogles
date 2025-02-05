@@ -44,7 +44,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="flex w-full flex-col md:flex-row">
+    <div className="flex w-full flex-col md:flex-row mt-16">
       <div className="flex flex-col">
         <h1 className={title({ class: ""})}>Let&apos;s build together.</h1>
         <h2 className="text-sky-800 text-lg my-8"><a href="/resume.pdf" download="jackson_ogles_resume">Download my resume 📝</a></h2>
@@ -62,7 +62,6 @@ export default function ContactPage() {
                 size="lg" 
                 placeholder="name" 
                 className="mb-4" 
-                description="Nicknames are encouraged! :)" 
               />
             }
             name="firstName"

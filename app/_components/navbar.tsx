@@ -72,8 +72,6 @@ export const Navbar = () => {
         className="sm:flex basis-1/5 sm:basis-full"
         justify="end"
       >
-        <ThemeSwitcher />
-        <div style={{width: "10px"}} />
         <NavbarItem className="flex gap-2">
           <Link isExternal aria-label="Github" href={siteConfig.links.github}>
             <GithubIcon className="text-default-500" />
@@ -99,6 +97,8 @@ export const Navbar = () => {
               </Link>
             </NavbarMenuItem>
           ))}
+          <p className="mt-4">Light/Dark Mode</p>
+          <ThemeSwitcher />
         </div>
       </NavbarMenu>
     </NextUINavbar>

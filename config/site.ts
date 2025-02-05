@@ -13,7 +13,7 @@ export const siteConfig = {
       href: "/about",
     },
     {
-      label: "Projects",
+      label: "Freelance",
       href: "/projects",
     },
     {

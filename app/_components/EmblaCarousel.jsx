@@ -88,24 +88,31 @@ const EmblaCarousel = (props) => {
 
   const projects = [
     {
-      url: 'https://lindyslocalpest.com/',
-      snapshoturl: '/assets/projects/lindys.png',
-      alt: 'lindys local pest control freelance',
-      title: `Lindy's Local Site`,
-      description: 'Sole developer for company, used Create React App, LESS CSS, and React Router to code the site. Deployed from Github with Vercel.'
+      url: 'https://www.cleansmarts.com/',
+      snapshoturl: '/assets/projects/clean_smarts.png',
+      alt: 'clean smarts freelance',
+      title: `Clean Smarts`,
+      description: 'Helped migrate WordPress front end to Vue, enhancing performance and maintainability.'
     },
     {
       url: 'https://boxcc-qiaaa-aaaan-qc7aq-cai.icp0.io/',
       snapshoturl: '/assets/projects/obsidian_tears.png',
       alt: 'obsidian tears videogame on blockchain',
-      title: `OT Video Game Site`,
-      description: 'Refactored front end by implementing TailwindCSS and refactoring / improving past styles and new components.'
+      title: `OT Online RPG`,
+      description: 'Refactored the front end implementing Tailwind CSS on React App.'
+    },
+    {
+      url: 'https://lindyslocalpest.com/',
+      snapshoturl: '/assets/projects/lindys.png',
+      alt: 'lindys local pest control freelance',
+      title: `Lindy's Local Pest Co`,
+      description: 'Developed the company website using React, LESS, and React Router; deployed via Vercel from GitHub.'
     },
     {
       url: '/',
       snapshoturl: '/assets/projects/under-construction.jpg',
-      alt: 'Project 3 Coming Soon!',
-      title: `Project 3 Coming Soon!`,
+      alt: 'Next project coming soon!',
+      title: `Next Project Coming Soon!`,
       description: 'Coming soon!'
     }
   ]
