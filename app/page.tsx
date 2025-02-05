@@ -22,7 +22,7 @@ export default function Home() {
           <h2 className={subtitle({ class: "mt-4" })}>
             A versatile full stack web developer with a passion for creating immersive UI, intuitive UX, and efficient API&apos;s 🙌. Let&apos;s build together!
           </h2>
-          <h3 className="text-sky-800 text-lg"><a href="/resume.pdf" download="jackson_ogles_resume">Download my resume 📝</a></h3>
+          {/* <h3 className="text-sky-800 text-lg"><a href="/resume.pdf" download="jackson_ogles_resume">Download my resume 📝</a></h3> */}
         </div>
         <div className="inline-block mt-4 md:mt-0 md:w-1/2 text-center justify-center px-2 sm:px-10 lg:px-20">
           <Image

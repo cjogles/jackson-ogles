@@ -20,9 +20,9 @@ export default function AboutPage() {
       <h2 className="mt-8 text-center text-lg line-height-8 px-24">
         I love building and understanding how things work. Software engineering fuels that passion, and web development lets me create meaningful, accessible solutions. I&apos;m grateful to work on projects that help people alongside amazing colleagues. The depth of this field humbles me, and I&apos;m excited for the future.
         <br/>
-        <p className="text-sky-800 text-lg">
+        {/* <p className="text-sky-800 text-lg">
           <a href="/resume.pdf" download="jackson_ogles_resume">Download my resume 📝</a>
-        </p>
+        </p> */}
       </h2>
       <div className="max-w-full">
         <div className="p-6 mx-auto">
