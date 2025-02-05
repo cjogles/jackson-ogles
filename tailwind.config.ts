@@ -27,6 +27,7 @@ const config: Config = {
       },
       spacing: {
         28: "7rem",
+        "carousel-controls-left": "42%",
       },
       letterSpacing: {
         tighter: "-.04em",

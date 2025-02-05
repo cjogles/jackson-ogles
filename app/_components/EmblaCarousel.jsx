@@ -118,10 +118,10 @@ const EmblaCarousel = (props) => {
   ]
 
   return (
-    <div className="embla">
-      <div className="embla__viewport" ref={emblaRef}>
-        <div className="embla__container ml-0">
-          {slides.map((index) => (
+    <div className="embla relative flex items-center overflow-visible">
+      <div className="embla__viewport overflow-visible relative flex items-center" ref={emblaRef}>
+        <div className="embla__container">
+        {slides.map((index) => (
             <div className="embla__slide" key={index}>
               <p className='my-2 font-bold'>{projects[index].title}</p>
               <div className="embla__parallax">
@@ -143,11 +143,11 @@ const EmblaCarousel = (props) => {
             </div>
           ))}
         </div>
-        <div className="embla__controls">
-          <div className="embla__buttons">
-            <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
-            <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
-          </div>
+      </div>
+      <div className="embla__controls absolute left-2/3 sm:left-carousel-controls-left -top-10 -translate-x-1/2 -translate-y-1/2 z-20 flex justify-between w-full -ml-10 sm:ml-4">
+        <div className="embla__buttons flex justify-between w-full">
+          <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
+          <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
         </div>
       </div>
     </div>
