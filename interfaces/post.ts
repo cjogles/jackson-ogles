@@ -14,4 +14,6 @@ export type Post = {
   preview?: boolean;
   deploy: string;
   github: string;
+  description: string;
+  keywords: string;
 };
